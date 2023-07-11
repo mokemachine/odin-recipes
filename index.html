@@ -1,39 +1,54 @@
+
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel = "stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <a href="recipes/cookies.html">COOMKIES</a>
-    <h3>COOMKIES</h3>
-    <p>The "BaZoomZoom" sugar-free coomkies will radiate both waves
-         of primordial bliss and counter-bowel frequencies in an epic display of
-         digestive fireworks.<br> Designed to handle even the most rugged of trash belly bio-cosms,
-        these coomkies are made with one-hundred percent "Goop-tech" technology that 
-        <br> enables fasttracking, auto-aim, and DMV/CPA quality-of-life boost. Not many
-        have been able to survive the tremors that these little wheat discs broadcast
-        <br>to the systems of the body, but the proud few have left incredibly positive
-        reviews. Check them out <a href ="https://www.youtube.com/watch?v=nK-okdwv09g&list=FLkKK3_LrMdGy7Ls6isnF71Q&index=16">here</a></p>
-    <h3>Reviews</h3>
-    <p>"It rocked my shit", said one customer Shwayne Pengis. "I didn't
+    <a href = "index.html">
+        <h1 class = "main_heading animate__animated animate__pulse animate__faster" id = "odinRecipes">Recipes by Mufik</h1>
+    </a>
+
+    <h3 class = "big_heading rainbow_animation">COOMKIES</h3>
+    <img src = "recipes/evilcookie.png">
+    <div class = "container">
+        <p class = "description">
+            The "BaZoomZoom" sugar-free coomkies will radiate both waves
+            of primordial bliss and counter-bowel frequencies in an epic display of
+            digestive fireworks.Designed to handle even the most rugged of trash belly bio-cosms,
+            these coomkies are made with one-hundred percent "Goop-tech" technology that 
+            enables fasttracking, auto-aim, and DMV/CPA quality-of-life boost. Not many
+            have been able to survive the tremors that these little wheat discs broadcast
+            to the systems of the body, but the proud few have left incredibly positive
+            reviews. Check them out 
+            <a class="fucked_hyperlink" 
+            href ="https://www.youtube.com/watch?v=nK-okdwv09g&list=FLkKK3_LrMdGy7Ls6isnF71Q&index=16"
+            >here</a></p>
+    </div>
+    
+    <h3 class = "small_heading rainbow_animation">Reviews</h3>
+    <p class = "review">"It rocked my shit", said one customer Shwayne Pengis. "I didn't
         expect a thing, and even if this little cookie<br> didn't mean nothing by it,
         damn thing tore my ass asunder soon as my stomach fully realized the
         extent of the threat."</p>
 
-    <p>"Yeah it kinda fucked me up :P", said Heather Boofington, owner of 
+    <p class = "review">"Yeah it kinda fucked me up :P", said Heather Boofington, owner of 
         Mrrreow Cookies in the Shade District.<br> "I made this recipe as a
         limited-time release in my bakery and it almost flew as fast off the shelves
         as the shit that flew out of my customers."</p>
 
-    <p>"Mmmm it was reallyyy goood m9, I really liked all the herbs and spoices"
+    <p class = "review">"Mmmm it was reallyyy goood m9, I really liked all the herbs and spoices"
         -Sassy</p>
 
-    <h3>Ingredients</h3>
-    <ul>
+    <h3 class = "small_heading rainbow_animation">Ingredients</h3>
+    <ul class = "list ingredient">
         <li>Coom</li>
         <li>Soy</li>
         <li>Lecthin</li>
@@ -48,14 +63,14 @@
         <li>Coconut Milk(100% vegan product)</li> 
         <li>Immigrant labor</li>
     </ul>
-    <h3>Steps</h3>
-    <ol>
+    <h3 class = "small_heading rainbow_animation">Steps</h3>
+    <ol class = "list cooking_directions">
         <li>Just put a bunch of drugs into a Betty Crocker cookie mix
             and bake at 450 degrees for 28 hours or however long it takes
             for the oven to explode. 
         </li>
     </ol>
-    <ul>
+    <ul class = "list videos">
         <li>Police Brutality</li>
         <li><a href="https://www.youtube.com/watch?v=uOIQf5DoHIU&list=FLkKK3_LrMdGy7Ls6isnF71Q">Ayo</a></li>
         <li>Organized Crime</li>
@@ -64,5 +79,24 @@
         <li><a href="https://www.youtube.com/watch?v=qwb_McI74rY&list=FLkKK3_LrMdGy7Ls6isnF71Q&index=23">Ayo</a></li>
 
     </ul>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Get the "odinRecipes" header element
+            var odinRecipesHeader = document.getElementById("odinRecipes");
+
+            // Add event listener for mouseover event
+            odinRecipesHeader.addEventListener("mouseover", function() {
+                // Add the "animate__pulse" class to the header
+                odinRecipesHeader.classList.add("animate__pulse","blueText");
+            });
+
+            // Add event listener for mouseout event
+            odinRecipesHeader.addEventListener("mouseout", function() {
+                // Remove the "animate__pulse" class from the header
+                odinRecipesHeader.classList.remove("animate__pulse","blueText");
+            });
+        });
+    </script>
+
 </body>
 </html>
